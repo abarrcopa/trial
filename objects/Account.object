@@ -385,6 +385,13 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Require_Name</fullName>
+        <active>true</active>
+        <description>Test</description>
+        <errorConditionFormula>NOT(ISNULL(Name) )</errorConditionFormula>
+        <errorMessage>account name cannot be blank</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>
